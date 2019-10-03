@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
+	//i would recommend to use the unity's latest version.
 	void Update () {
 		
 	}
@@ -35,13 +36,13 @@ public class UIManager : MonoBehaviour {
     {
         PlayButton.SetActive(true);
         PauseButton.SetActive(false);
-        MusicManager.SendMessage("Pause the song", null, SendMessageOptions.DontRequireReceiver);
+        MusicManager.SendMessage("Pause the song and wait", null, SendMessageOptions.DontRequireReceiver);
     }
     public void Mute()
     {
         MuteButton.SetActive(false);
         UnMuteButton.SetActive(true);
-        MusicManager.SendMessage("Mute the song", null, SendMessageOptions.DontRequireReceiver);
+        MusicManager.SendMessage("Mute the song amd wait", null, SendMessageOptions.DontRequireReceiver);
     }
     public void UnMute()
     {
